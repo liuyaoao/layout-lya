@@ -1,9 +1,13 @@
-import SqButton from './SqButton'
-import SqText from './SqText'
-import SqTextDraw from './SqTextDraw'
+import BottomGrow from './BottomGrow'
+// import SqText from './SqText'
+// import SqTextDraw from './SqTextDraw'
 
 // 所有组件列表
-const components = [SqButton, SqText, SqTextDraw]
+const components = [
+  BottomGrow,
+  // SqText,
+  // SqTextDraw
+]
 // 定义install方法，接收Vue作为参数
 const install = function(Vue) {
   // 判断是否安装，安装过就不继续往下执行
