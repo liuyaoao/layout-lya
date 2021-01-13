@@ -1,11 +1,47 @@
 <template>
   <div id="app">
-    <BottomGrow>
-      <img alt="Vue logo" src="./assets/logo.png">
-      <template v-slot:grow>
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-      </template>
-    </BottomGrow>
+    <div>
+      <BottomGrow>
+        <img alt="Vue logo" src="./assets/logo.png">
+        <template v-slot:grow>
+          <HelloWorld msg="Welcome to Your Vue.js App"/>
+        </template>
+      </BottomGrow>
+    </div>
+    <div>
+      <RightGrow>
+        <Vertical3Part>
+          <template v-slot:top>
+            <img alt="Vue logo2" src="./assets/logo.png">
+          </template>
+          <template v-slot:middle>
+            <img alt="Vue logo2" src="./assets/logo.png">
+          </template>
+          <template v-slot:bottom>
+            <img alt="Vue logo2" src="./assets/logo.png">
+          </template>
+        </Vertical3Part>
+        <template v-slot:grow>
+          <HelloWorld msg="Welcome to Your Vue.js App 2"/>
+        </template>
+      </RightGrow>
+    </div>
+    <div>
+      <LeftGrow>
+        <template v-slot:grow>
+          <HelloWorld msg="Welcome to Your Vue.js App 2"/>
+        </template>
+        <Vertical2Part>
+          <template v-slot:top>
+            <img alt="Vue logo2" src="./assets/logo.png">
+          </template>
+          <template v-slot:bottom>
+            <img alt="Vue logo2" src="./assets/logo.png">
+          </template>
+        </Vertical2Part>
+      </LeftGrow>
+    </div>
+
   </div>
 </template>
 

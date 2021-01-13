@@ -1,12 +1,16 @@
 import BottomGrow from './BottomGrow'
-// import SqText from './SqText'
-// import SqTextDraw from './SqTextDraw'
+import RightGrow from './RightGrow'
+import LeftGrow from './LeftGrow'
+import Vertical2Part from './Vertical2Part'
+import Vertical3Part from './Vertical3Part'
 
 // 所有组件列表
 const components = [
   BottomGrow,
-  // SqText,
-  // SqTextDraw
+  RightGrow,
+  LeftGrow,
+  Vertical2Part,
+  Vertical3Part,
 ]
 // 定义install方法，接收Vue作为参数
 const install = function(Vue) {
