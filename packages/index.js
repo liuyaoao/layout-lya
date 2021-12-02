@@ -10,8 +10,8 @@ const components = [
   RightGrow,
   LeftGrow,
   Vertical2Part,
-  Vertical3Part,
-]
+  Vertical3Part
+];
 // 定义install方法，接收Vue作为参数
 const install = function(Vue) {
   // 判断是否安装，安装过就不继续往下执行
@@ -21,13 +21,11 @@ const install = function(Vue) {
   components.map(component => Vue.component(component.name, component))
   // 下面这个写法也可以
   // components.map(component => Vue.use(component))
-}
-
+};
 // 检测到Vue才执行，毕竟我们是基于Vue的
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
-
 export default {
   install,
   // 所有组件，必须具有install，才能使用Vue.use()
