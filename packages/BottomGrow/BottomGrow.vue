@@ -1,6 +1,6 @@
 <template>
   <div class="btm_grow">
-    <div>
+    <div class="aut_part">
       <slot></slot>
     </div>
     <div class="grw_part">

@@ -3,7 +3,7 @@
     <div class="grw_part">
       <slot name="grow"></slot>
     </div>
-    <div>
+    <div class="aut_part">
       <slot></slot>
     </div>
   </div>
